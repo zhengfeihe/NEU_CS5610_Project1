@@ -1,0 +1,51 @@
+/* home page */
+
+
+.main{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main p {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+
+    .main{
+        width: 80%;
+        margin: auto;
+        margin-top: 250px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+
